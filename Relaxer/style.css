@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #4e8d98 url(bubbles.jpg) no-repeat center center/cover;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  transform: scale(1);
+}
+
+.gradient-circle{
+  background: conic-gradient(
+    #78b2ba 0%,
+    #78b2ba 40%,
+    #546b6f 40%,
+    #546b6f 60%,
+    #073c4b 60%,
+    #073c4b 100%
+  );
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  position: absolute;
+  top:-10px;
+  left:-10px;
+  z-index: -2;
+}
+
+.circle{
+  background-color: #010f1c;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+
+.pointer-container{
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  /* background: red; */
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+.pointer{
+  background-color: #fff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+
+.container.grow{     /* use no space for both classes or just .grow */
+  animation: grow 3s linear forwards;
+}
+.container.shrink{
+  animation: shrink 3s linear forwards;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shrink{
+  from{
+    transform: scale(1.2);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 250px;
+  height: 25px;
+  position: absolute;
+  bottom: 10vh;
+}
