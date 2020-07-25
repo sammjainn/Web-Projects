@@ -7,3 +7,6 @@ Frontend Web Development Projects
 3. Portfolio Website: https://trusting-nobel-9ec96f.netlify.app/
 
 4. Relaxer : https://lucid-brattain-7f17dc.netlify.app/
+
+
+                                                                                        Credits: Brad Traversy for his amazing tutorials
