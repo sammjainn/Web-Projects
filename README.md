@@ -9,4 +9,4 @@ Frontend Web Development Projects
 4. Relaxer : https://lucid-brattain-7f17dc.netlify.app/
 
 
-                                                                                        Credits: Brad Traversy for his amazing tutorials
+Credits: Brad Traversy for his amazing tutorials
